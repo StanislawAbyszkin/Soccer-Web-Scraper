@@ -1,5 +1,5 @@
 from Soup import Soup
-from EnumTeamType import TeamType
+from Scraper.EnumTeamType import TeamType
 import re
 
 class MatchDetailsSoup(Soup):

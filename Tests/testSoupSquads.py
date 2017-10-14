@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import unittest
+
 from DataForTests import squads_text
-from Scraper.SoupSquads import SquadsSoup
+from Scraper.SoupModels.SoupSquads import SquadsSoup
+
 
 class TestPlayersSoup(unittest.TestCase):
 

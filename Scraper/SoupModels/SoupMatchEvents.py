@@ -1,5 +1,4 @@
 from Soup import Soup
-from SoupMatchEventsHeading import MatchEventsHeadingSoup
 
 class MatchEventsSoup(Soup):
 
@@ -13,10 +12,3 @@ class MatchEventsSoup(Soup):
 
     def extract_all_events(self):
         return self.__get_all_events()
-
-    def get_event_type(self):
-        events = []
-        for event_soup in self.__get_all_events():
-            event = MatchEventsHeadingSoup(str(event_soup))
-            events.append(event.get_event_type())
-        return events

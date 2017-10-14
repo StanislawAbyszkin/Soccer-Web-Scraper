@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import unittest
+
 from DataForTests import player_heading_text
-from Scraper.SoupPlayerHeading import PlayerHeadingSoup
+from Scraper.SoupModels.SoupPlayerHeading import PlayerHeadingSoup
+
 
 class TestPlayersSoup(unittest.TestCase):
 

@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 import unittest
-from DataForTests import match_events_text, match_event_heading_text
+
 from Scraper.SoupMatchEvents import MatchEventsSoup
-from Scraper.SoupMatchEventsHeading import MatchEventsHeadingSoup
+
+from DataForTests import match_events_text, match_event_heading_text
+from Scraper.SoupModels.SoupMatchEventsHeading import MatchEventsHeadingSoup
+
 
 class TestMatchEventsSoup(unittest.TestCase):
 

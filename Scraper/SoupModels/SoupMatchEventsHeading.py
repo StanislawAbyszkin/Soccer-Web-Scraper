@@ -1,5 +1,5 @@
 from Models.EnumMatchEventType import MatchEventType
-import HelperMethods
+import Scraper.HelperMethods
 import re
 from Soup import Soup
 
@@ -26,7 +26,7 @@ class MatchEventsHeadingSoup(Soup):
 
     def get_event_player_id(self):
         url = self.get_soup().find('a')['href']
-        return int(HelperMethods.extract_player_id_from_url(url))
+        return int(Scraper.HelperMethods.extract_player_id_from_url(url))
 
     def __extract_event_minute(self):
         minuta = self.get_soup().find('div', re.compile('action-time')).text.strip()
